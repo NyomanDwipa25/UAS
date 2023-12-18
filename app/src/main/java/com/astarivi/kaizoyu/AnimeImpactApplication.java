@@ -18,7 +18,7 @@ import java.io.File;
 import java.lang.ref.WeakReference;
 
 
-public class KaizoyuApplication extends Application {
+public class AnimeImpactApplication extends Application {
     public static WeakReference<Application> application;
 
     public static Application getApplication() {
@@ -32,7 +32,7 @@ public class KaizoyuApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        application = new WeakReference<>(KaizoyuApplication.this);
+        application = new WeakReference<>(AnimeImpactApplication.this);
         checkDynamicColors();
 
         ACRA.init(this, new CoreConfigurationBuilder()

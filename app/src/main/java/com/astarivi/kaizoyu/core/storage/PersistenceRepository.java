@@ -8,7 +8,7 @@ import androidx.core.app.ActivityManagerCompat;
 import androidx.room.Room;
 
 import com.astarivi.kaizolib.common.network.UserHttpClient;
-import com.astarivi.kaizoyu.KaizoyuApplication;
+import com.astarivi.kaizoyu.AnimeImpactApplication;
 import com.astarivi.kaizoyu.core.common.AnalyticsClient;
 import com.astarivi.kaizoyu.core.storage.database.AppDatabase;
 import com.astarivi.kaizoyu.core.storage.database.migrations.Migrations;
@@ -43,11 +43,11 @@ public class PersistenceRepository {
             throw new RuntimeException("Duplicated singleton ConfigurationRepository");
         }
 
-        if (KaizoyuApplication.application == null) {
+        if (AnimeImpactApplication.application == null) {
             throw new RuntimeException("Application context hasn't been initialized yet");
         }
 
-        Context context = KaizoyuApplication.getContext();
+        Context context = AnimeImpactApplication.getContext();
 
         // Check for low specs device
         ActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
@@ -62,7 +62,7 @@ public class PersistenceRepository {
         botsConfiguration = new ExtendedProperties(context, "NiblBots.properties");
 
         database = Room.databaseBuilder(
-                KaizoyuApplication.getApplication().getApplicationContext(),
+                AnimeImpactApplication.getApplication().getApplicationContext(),
                 AppDatabase.class,
                 "kaizo-database"
         ).addMigrations(
@@ -85,7 +85,7 @@ public class PersistenceRepository {
 
         System.setProperty(
                 "tinylog.directory",
-                KaizoyuApplication.getApplication().getApplicationContext().getFilesDir().getAbsolutePath()
+                AnimeImpactApplication.getApplication().getApplicationContext().getFilesDir().getAbsolutePath()
         );
 
         Logger.info("Starting logging session");

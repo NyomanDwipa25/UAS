@@ -14,7 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 
-import com.astarivi.kaizoyu.KaizoyuApplication;
+import com.astarivi.kaizoyu.AnimeImpactApplication;
 import com.astarivi.kaizoyu.core.common.ThreadedOnly;
 import com.astarivi.kaizoyu.core.models.Anime;
 import com.astarivi.kaizoyu.core.models.SeasonalAnime;
@@ -169,9 +169,9 @@ public class Utils {
     }
 
     public static void clearCache() {
-        if (KaizoyuApplication.application == null) return;
+        if (AnimeImpactApplication.application == null) return;
 
-        File[] files = KaizoyuApplication.getApplication().getCacheDir().listFiles();
+        File[] files = AnimeImpactApplication.getApplication().getCacheDir().listFiles();
         if(files == null) {
             return;
         }

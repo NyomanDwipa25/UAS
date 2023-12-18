@@ -11,7 +11,7 @@ import android.os.Build;
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationManagerCompat;
 
-import com.astarivi.kaizoyu.KaizoyuApplication;
+import com.astarivi.kaizoyu.AnimeImpactApplication;
 import com.astarivi.kaizoyu.R;
 
 import org.tinylog.Logger;
@@ -25,7 +25,7 @@ public class NotificationsHub {
             return;
         }
 
-        Context context = KaizoyuApplication.getContext();
+        Context context = AnimeImpactApplication.getContext();
 
         NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
 
@@ -93,7 +93,7 @@ public class NotificationsHub {
     }
 
     public static boolean areNotificationDisabled(Channel channel) {
-        NotificationManager notificationManager = KaizoyuApplication.getContext().getSystemService(NotificationManager.class);
+        NotificationManager notificationManager = AnimeImpactApplication.getContext().getSystemService(NotificationManager.class);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel notificationChannel = notificationManager.getNotificationChannel(channel.getValue());

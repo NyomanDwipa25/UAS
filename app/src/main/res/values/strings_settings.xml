@@ -3,7 +3,7 @@
     <string name="settings_button">Settings</string>
     <string name="storage_button">Storage</string>
     <string name="storage_subtitle">Manage storage related settings, like backups, cache and downloads</string>
-    <string name="settings_subtitle">Change Kaizoyu! related settings, like appearance or quality of life functionalities</string>
+    <string name="settings_subtitle">Change AniPact! related settings, like appearance or quality of life functionalities</string>
     <string name="analytics">Analytics</string>
     <string name="analytics_description">Send anonymous usage and performance reports to help improve the app</string>
     <string name="ipv6_sources">Show IPv6 Sources</string>
@@ -35,7 +35,7 @@
     <string name="updatecheck_title">Check for Update</string>
     <string name="updatecheck_description">Check for app updates. Current version: %s</string>
     <string name="licenses_title">Open Source Licenses</string>
-    <string name="licenses_description">See the licenses, copyright and attributions of the libraries used to make Kaizoyu! possible</string>
+    <string name="licenses_description">See the licenses, copyright and attributions of the libraries used to make AniPact! possible</string>
     <string name="app_theme">App Theme</string>
     <string name="app_theme_context">Select app theme</string>
     <!-- Themes -->

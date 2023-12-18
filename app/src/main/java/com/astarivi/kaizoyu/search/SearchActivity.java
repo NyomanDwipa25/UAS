@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.astarivi.kaizoyu.BuildConfig;
-import com.astarivi.kaizoyu.KaizoyuApplication;
+import com.astarivi.kaizoyu.AnimeImpactApplication;
 import com.astarivi.kaizoyu.R;
 import com.astarivi.kaizoyu.core.common.AnalyticsClient;
 import com.astarivi.kaizoyu.core.models.base.ModelType;
@@ -168,7 +168,7 @@ public class SearchActivity extends AppCompatActivityTheme {
 
         searchSuggestions.removeAllViews();
 
-        if (KaizoyuApplication.application == null) {
+        if (AnimeImpactApplication.application == null) {
             AnalyticsClient.logBreadcrumb("application_null_search_history");
             return;
         }

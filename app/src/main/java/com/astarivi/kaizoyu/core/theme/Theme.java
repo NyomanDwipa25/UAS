@@ -2,7 +2,7 @@ package com.astarivi.kaizoyu.core.theme;
 
 import android.content.Context;
 
-import com.astarivi.kaizoyu.KaizoyuApplication;
+import com.astarivi.kaizoyu.AnimeImpactApplication;
 import com.astarivi.kaizoyu.R;
 import com.astarivi.kaizoyu.core.storage.properties.ExtendedProperties;
 import com.astarivi.kaizoyu.utils.Data;
@@ -48,7 +48,7 @@ public enum Theme {
     }
 
     public static @NotNull Theme getCurrentTheme() {
-        if (KaizoyuApplication.application == null) return HIGH_CONTRAST;
+        if (AnimeImpactApplication.application == null) return HIGH_CONTRAST;
 
         int currentTheme = Data.getProperties(Data.CONFIGURATION.APP)
                 .getIntProperty(

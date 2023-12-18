@@ -63,7 +63,7 @@
     <color name="md_theme_dark_outlineVariant">#3F4949</color>
     <color name="md_theme_dark_scrim">#000000</color>
     <color name="black_overlay">#000000</color>
-    <color name="branding_accent">#E174AF</color>
+    <color name="branding_accent">#FF0000</color>
     <color name="branding_alternate">#51879E</color>
 
     <!-- Player view -->

@@ -74,17 +74,11 @@
                     android:layout_marginEnd="15dp"
                     android:gravity="center_vertical"
                 >
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="KAIZOYU!"
-                        tools:ignore="HardcodedText"
-                        android:letterSpacing="-0.1"
-                        android:textSize="32sp"
-                        android:layout_gravity="start"
-                        android:fontFamily="@font/lato_black"
-                        android:id="@+id/mainAppTitle"
-                    />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/animeimpact2"
+                        />
 
                     <View
                         android:layout_width="0dp"
